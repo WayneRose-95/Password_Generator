@@ -1,22 +1,18 @@
 import string 
 import random 
 
-#TODO: Base code. Refactor this into a function. 
+#TODO: Can this be refactored into a class now? 
 
-print("Welcome to Password Generator")
+def random_password(lower, upper, num, symbols):
+    length = int(input('Enter the length of your password:   '))
 
-length = int(input('Enter the length of your password: '))
+    all = lower + upper + num + symbols
+    temp = random.sample(all, length)
+    password = "".join(temp)
+    return password 
 
 
-lower = string.ascii_lowercase
-upper = string.ascii_uppercase
-num = string.digits
-symbols = string.punctuation
-
-all = lower + upper + num + symbols 
-
-temp = random.sample(all,length)
-
-password = "".join(temp)
-
-print(password)
+random_password(string.ascii_lowercase, 
+string.ascii_uppercase,
+string.digits, 
+string.punctuation)
