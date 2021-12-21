@@ -1,6 +1,8 @@
 import string 
 import random 
 
+# TODO: clean up the variable names. 
+
 class Random_Password:
 
     def __init__(self):
