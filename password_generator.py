@@ -41,8 +41,9 @@ class Random_Password:
         
    
 
-new_password = Random_Password()
-new_password.create_the_password(new_password.get_user_input())
+if __name__ == "__main__":
+    new_password = Random_Password()
+    new_password.create_the_password(new_password.get_user_input())
 
-while new_password.choose_again() is True:
-    print(f'................................................')
+    while new_password.choose_again() is True:
+        print(f'................................................')
