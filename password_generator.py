@@ -22,7 +22,7 @@ class Random_Password:
 
     def create_the_password(self, password_length : int):
         letters = ""
-        for i in range(0,password_length):
+        for letter in range(0,password_length):
             letters += random.choice(self.lower + self.upper + self.digits + self.puncutation)
         print(f'Your new password: {letters}')
         return letters  
@@ -30,12 +30,12 @@ class Random_Password:
         
 
     def choose_again(self):
-        r = input("Would you like to restart this program? Yes or No?")
-        if r == "yes" or r == "y":
+        restart = input("Would you like to restart this program? Yes or No?")
+        if restart == "yes" or restart == "y":
             new_password.create_the_password(new_password.get_user_input()) 
             return True 
 
-        if r == "n" or r == "no":
+        if restart == "n" or restart == "no":
             print ("Enjoy your new password :)" )
             return False 
         
