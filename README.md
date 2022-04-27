@@ -36,3 +36,9 @@ no
 
  ```
 into the prompt and enjoy your new password. 
+
+# Future Additions 
+
+- For each password that is generated, output it to a .txt file
+
+## Contributions Welcomed! 
