@@ -1,7 +1,6 @@
 import string 
 import random 
 
-# TODO: clean up the variable names. 
 
 class Random_Password:
 
@@ -14,7 +13,9 @@ class Random_Password:
         
 
     def get_user_input(self):
+
         '''
+
         Method to collect the input from the user 
 
         Returns: 
@@ -22,13 +23,14 @@ class Random_Password:
         An integer which corresponds to the length of the users' password 
 
         '''
-      
+        # print("Welcome to Password Generator! ")
         self.user_input = int(input("Please enter your password length :"))
-           
+
         return self.user_input
 
 
     def create_the_password(self, password_length : int):
+
         '''
         Method to create the password using a mixture of characters 
 
@@ -41,6 +43,7 @@ class Random_Password:
         The users' password as a string 
 
         '''
+
         letters = ""
         for letter in range(0,password_length):
             letters += random.choice(self.lower + self.upper + self.digits + self.puncutation)
@@ -50,6 +53,7 @@ class Random_Password:
         
 
     def choose_again(self):
+
         '''
         Method to allow the user to re-run the program after choosing their 
         password 
@@ -59,6 +63,7 @@ class Random_Password:
 
         False if the user inputs "no" or n" 
         '''
+
         restart = input("Would you like to restart this program? Yes or No?")
         if restart == "yes" or restart == "y":
             new_password.create_the_password(new_password.get_user_input()) 
@@ -76,5 +81,3 @@ if __name__ == "__main__":
 
     while new_password.choose_again() is True:
         print(f'................................................')
-        
-
