@@ -1,5 +1,7 @@
 # Password_Generator
 
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 A simple program to generate passwords for a user. 
 
 # Running the Program 
