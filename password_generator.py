@@ -23,7 +23,7 @@ class Random_Password:
         An integer which corresponds to the length of the users' password 
 
         '''
-        # print("Welcome to Password Generator! ")
+        print("Welcome to Password Generator! ")
         self.user_input = int(input("Please enter your password length :"))
 
         return self.user_input
